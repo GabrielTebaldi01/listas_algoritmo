@@ -1,0 +1,48 @@
+/*exercicio numero 1*/
+
+#include<stdio.h>
+#include<stdlib.h>
+
+int main(){
+	
+	int numero;
+	int i;
+	
+	
+	printf("Digite um inteiro positivo: ");
+	scanf("%d", &numero);
+	
+	
+	for(i=0; i <= numero; i++){
+		printf("Numero : %d\n", i);
+	}
+}
+
+
+
+/*exercicio numero 2*/
+
+#include<stdio.h>
+#include<stdlib.h>
+
+int main(){
+	
+	int numero;
+	int i;
+	
+	
+	printf("Digite um inteiro positivo: ");
+	scanf("%d", &numero);
+	
+	
+	for( i = numero; i >= 0 ; i--){
+		printf("Numero : %d\n", i);
+	}
+}
+
+
+
+/*exercicio numero 3*/
+
+
+
