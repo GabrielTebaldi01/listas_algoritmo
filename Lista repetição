@@ -114,6 +114,31 @@ return 0;
 /*exercicio numero 5*/
 
 
+#include<stdio.h>
+#include<stdlib.h>
+#include<string.h>
+
+int main(){
+	
+	int i;
+	
+	printf ("O o programa terminara em:\n ");
+	
+	for(i = 10; i >= 0; i--){
+		printf("%d\n", i);
+		
+	}
+	
+	printf("FIM");
+	
+	return 0;
+}
+
+
+
+/*exercicio numero 6*/
+
+
 
 
 
