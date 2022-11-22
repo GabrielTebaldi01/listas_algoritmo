@@ -233,6 +233,46 @@ int main(){
 /*exercicio numero 10*/
 
 
+#include<stdio.h>
+#include<stdlib.h>
+#include<string.h>
+
+int main(){
+	
+	int i, n, media;
+	int soma = 0;
+	int positivos, negativos, nPositivos;
+	
+	
+	for( i = 1; i<= 10; i++){
+		printf("Digite valores positivo e negativos: ");
+		scanf("%d", &n);
+		
+		if(n > 0)
+		{
+		nPositivos = i;	
+		positivos = n;
+		soma = soma + positivos;
+		media = soma/nPositivos;
+ 	    }
+		
+		else
+		negativos;
+		
+}
+	
+	printf("\nTotal de numeros positivos: %d", nPositivos);
+	printf("\nMedia dos numeros positivos igual a: %d", media);
+	
+	
+	return 0;
+}
+
+
+
+/*exercicio numero 11*/
+
+
 
 
 
