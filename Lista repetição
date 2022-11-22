@@ -194,6 +194,47 @@ int main(){
 /*exercicio numero 9*/
 
 
+#include<stdio.h>
+#include<stdlib.h>
+#include<string.h>
+
+int main(){
+	
+	int i, n;
+	int menor, maior;
+	
+	printf("Digite o 1o valor: ");
+	scanf("%i", &n);
+	
+	menor = n;
+	maior = n;
+	
+	for( i = 1; i < 10; i++){
+		printf("Digite o %do valor:  ", i+1 );
+		scanf("%i", &n);
+		
+		if(n > maior)
+		maior = n;
+	
+		else 
+		if (n < menor) 
+		menor = n;
+		
+}
+	
+    printf("O menor numero eh: %d\n", menor);
+    printf("O maior numero eh: %d", maior);
+	
+    return 0;
+}
+
+
+
+/*exercicio numero 10*/
+
+
+
+
 
 
 
