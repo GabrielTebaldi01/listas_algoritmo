@@ -336,6 +336,38 @@ int main(){
 /*exercicio numero 13*/
 
 
+#include<stdio.h>
+#include<stdlib.h>
+#include<string.h>
+
+
+int main (){
+	
+	int numero, n1,n2,n3;
+	n1=0;
+	n2=1;
+	
+	printf("Digite um numero para sequencia de fibonacci: ");
+	scanf("%d", &numero);
+	 printf ("0 - 1");
+    while (n2<numero){
+    	
+    	n3 = n1 + n2;
+    	printf(" - %d", n3);
+    	n1 = n2;
+    	n2 = n3;
+    	
+	}
+	printf("\n");
+	system ("pause");
+	return 0;
+}
+
+
+
+/*exercicio numero 14*/
+
+
 
 
 
