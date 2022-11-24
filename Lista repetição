@@ -441,11 +441,38 @@ int main(){
 
 
 
-/*exercicio numero 16*/
+/*exercicio numero 17*/
+
+
+#include<stdio.h>
+#include<stdlib.h>
+#include<string.h>
+#include<math.h>
+
+
+int main(){
+	int i, c, x;
+	int numero;
+	x=0;
+	
+	printf("Digite quantas linhas voce deseja no seu triangulo defloyd: ");
+	scanf("%d", &numero);
+	
+	for(c =1; c <= numero; c++){
+		for( i=1; i<=c; i++){
+		   x++;	
+		   printf("%d ", x);
+		}
+		
+		printf("\n");
+	
+		
+	}
+}
 
 
 
-
+/*exercicio numero 18*/
 
 
 
