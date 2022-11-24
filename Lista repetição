@@ -409,7 +409,39 @@ int main(){
 /*exercicio numero 15*/
 
 
+#include<stdio.h>
+#include<stdlib.h>
+#include<string.h>
+#include<math.h>
 
+
+int main(){
+	
+	int i;
+	float numero ;
+	float enesimo;
+	
+	
+	
+	printf("Digite um numero para saber o enesimo termo da sequencia harmonica: ");
+	scanf("%f", &numero);
+	
+	enesimo = 0;
+	
+	for(i=1; i <=numero; i++){
+		
+		enesimo = enesimo + (1.0/i);
+	}
+	
+
+	printf("\nO enesimo termo da sua sequencia harmonica eh: %.4f", enesimo);
+    
+	return 0;
+}
+
+
+
+/*exercicio numero 16*/
 
 
 
