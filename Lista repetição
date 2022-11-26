@@ -493,11 +493,40 @@ int main(){
 /*exercicio numero 18*/
 
 
+#include<stdio.h>
+#include<stdlib.h>
+#include<string.h>
+
+
+int main(){
+	int numero,i;
+	
+	printf ("Digite um numero maior do que 1: ");
+	scanf("%d", &numero);
+	
+	if (numero == 2){
+	printf("Numero %d eh primo!", numero);
+    }
+    
+    while(numero < 1){
+    	printf("Numero invalido, por favor digite um numero maior que 1: ");
+    	scanf("%d", &numero);
+	}
+	
+	for(i = 2; i < numero; i++){
+		
+		if(numero%i==0)
+		printf ("Numero %d nao eh primo! ", numero);
+		
+		else
+		printf("Numero %d eh primo!", numero);
+		break;
+	}
+}
 
 
 
-
-
+/*exercicio numero 19*/
 
 
 
