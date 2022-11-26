@@ -530,4 +530,70 @@ int main(){
 
 
 
+#include<stdio.h>
+#include<stdlib.h>
+#include<string.h>
+
+
+int main(){
+	int numero,i;
+	int a,p,m;
+	int somaA = 0,somaP = 0,somaM = 0, somaTotal = 0;
+	
+	do{
+		printf("\nSegue menu de frutas\n\n Maca = 1$ unidade\n Pera = 4$ unidade\n Abacaxi = 5$ unidade\n\n");
+		
+		printf("Se deseja comprar maca digite 1, para comprar pera digite 2, para comprar abacaxi digite 3 e caso nao queira comprar digite 0:  ");
+		scanf("%d", &numero);
+		
+		if(numero == 1){
+		printf("Quantas unidades deseja ?");
+		scanf("%d", &m);
+		
+		somaM = somaM + m;
+        }
+		
+		else if (numero == 2){
+		printf("Quantas unidades deseja ?");
+		scanf("%d", &p);
+		
+		somaP = somaP + p;
+	   }
+		
+		else if(numero == 3){
+		printf("Quantas unidades deseja ?");
+		scanf("%d", &a);
+		
+		somaA = somaA + a;
+	    }
+	    
+	    printf("\nQuantidade de frutas ate o momento: \n Maca = %d\n Pera = %d\n Abacaxi = %d\n", somaM, somaP, somaA);
+	    
+	    
+	    
+	}while(numero!=0);
+	
+	somaTotal = (somaA*5) + (somaP*4) + somaM;
+	
+	printf("\nO total a pagar eh: %d$", somaTotal);
+
+}
+
+
+
+/*exercicio numero 18*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
