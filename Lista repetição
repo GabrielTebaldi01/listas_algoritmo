@@ -585,6 +585,100 @@ int main(){
 
 
 
+#include<stdio.h>
+#include<stdlib.h>
+#include<string.h>
+
+int main (){
+    int idade;
+    float total=0.0, i=0;
+    float media;
+    float salario;
+    char sexo,olhos,cabelo;
+
+
+    printf(" Pesquisa populacional\n Pesquisa destinada a pessoas entre 10 e 100 anos\n Quando quiser encerrar a pesquisa digite -1\n\n");
+    
+    
+    do{
+    	printf("Digite a idade na pessoa para a pesquisa :");
+    	fflush(stdin);
+    	scanf("%d", &idade);
+    	printf("\n");
+    	
+    	if(idade == -1){
+    		break;
+		}
+    	
+    	
+    	while (idade<10 || idade >100){
+    		printf("Idade nao aceita, informe a idade correta :");
+    		scanf("%d", &idade);
+		}
+		
+		printf("Informe o sexo da pessoa (M)asculino ou (F)eminino :");
+		fflush(stdin);
+		scanf("%s", &sexo);
+    	printf("\n");
+    	
+    	while ( sexo != 'M' && sexo != 'F' )
+        {
+              printf("informe o sexo (M)asculino ou (F)eminino: ");
+            fflush(stdin);
+            scanf("%c",&sexo);
+            printf("\n");
+        }
+        
+         printf("Qual a cor dos olhos, digite (A) para azul, (V) para verdes, (C) para castanhos e (P) para pretos:");
+        fflush(stdin);
+        scanf("%c",&olhos);
+         printf("\n");
+         
+          while ( olhos != 'A' && olhos != 'V' && olhos != 'C' && olhos != 'P')
+        {
+            printf("Qual a cor dos olhos, digite (A) para azul, (V) para verdes, (C) para castanhos e (P) para pretos:");
+            fflush(stdin);
+            scanf("%c",&olhos);
+             printf("\n");
+        }
+        
+        printf("Qual a cor dos cabelo, digite (L) par loiros,(C) para castanhos,(P) para pretos e (R) para ruivos: ");
+        fflush(stdin);
+        scanf("%c",&cabelo);
+        printf("\n");
+
+        while ( cabelo != 'L' && cabelo != 'C'&& cabelo != 'P' && cabelo != 'R')
+        {
+           printf("Qual a cor dos cabelo, digite (L) par loiros,(C) para castanhos,(P) para pretos e (R) para ruivos: ");
+            fflush(stdin);
+            scanf("%c",&cabelo);
+            printf("\n");
+        }
+        
+		printf("Quantos recebe a pessoa: ");
+        scanf("%f",&salario);
+        printf("\n");
+    	
+    	
+    	if (sexo == 'F' && olhos == 'C' && cabelo== 'C'  && idade >= 18 && idade <= 35)
+        {
+           i++;
+        }
+        total ++;
+        
+	}while(idade != -1);
+	
+	media = (i/total)*100.00;
+    printf(" \n A partir dessa pesquisa obtivemos que,\n a porcentagem de indiviuos do sexo feminino,\n com idade entre 18 e 35 anos,\n com olhos e cabelo castanhos e de : %.2f%%",media);
+    
+    
+   
+    return 0;
+    
+}
+
+
+
 
 
 
